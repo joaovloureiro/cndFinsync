@@ -15,6 +15,10 @@ body {
   width: 100vw;
   color: var(--color-text);
   font-family: "Krona One", sans-serif;
+
+  button {
+    cursor: pointer;
+  }
 }
 
 .header {
@@ -128,6 +132,76 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+  }
+
+  & > .table-search {
+    padding: 18px 24px;
+
+    & > .input-container {
+      display: flex;
+      width: 100%;
+      height: 45.644px;
+      border: 1px solid var(----color-text, rgba(28, 29, 30, 0.94));
+      border-radius: 8px;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      & > img {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-left: 12px;
+      }
+
+      & > input {
+        border: none;
+        font-family: Krona One;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:focus-visible {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  & > table {
+    width: 100%;
+    border-spacing: 0;
+
+    & > tbody > tr {
+      &:first-child > td {
+        border-top: 1px solid rgba(117, 104, 84, 0.4);
+      }
+
+      & > td {
+        border-bottom: 1px solid rgba(117, 104, 84, 0.4);
+        padding: 8px 12.5px;
+        font-size: 14px;
+        margin: 0;
+
+        &.success {
+          color: var(--color-success);
+        }
+
+        &.danger {
+          color: var(--color-danger);
+        }
+      }
+
+      & > td:first-child {
+        padding-left: 24px;
+      }
+
+      & > td:last-child {
+        padding-right: 24px;
+        text-align: end;
+      }
     }
   }
 }
