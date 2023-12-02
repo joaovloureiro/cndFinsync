@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Quicksand:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>FinSync</title>
+  </head>
+  <body>
+    <script>
+      const amount = 15000000;
+    </script>
+
+    <header class="header">
+      <div class="header-top">
+        <div class="left-col">
+          <h3>Saldo</h3>
+
+          <div class="show-amount">
+            <span class="amount">R$ *****</span>
+            <button>
+              <img
+                width="32"
+                height="32"
+                src="../assets/imgs/clarity_eye-hide-line.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+
+        <a href="" class="user-photo">
+          <img src="../assets/imgs/user.png" alt="" />
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href=""
+              ><img
+                width="16"
+                height="16"
+                src="../assets/imgs/carbon_growth.svg"
+                alt=""
+              />
+              Dashboard</a
+            >
+          </li>
+          <li>
+            <button>
+              <img
+                width="16"
+                height="16"
+                src="../assets/imgs/icon-plus.svg"
+                alt=""
+              />
+              Adicionar lançamento
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-home">
+      <div class="title">
+        <h1>Histórico</h1>
+      </div>
+
+      <div class="table-search">
+        <div class="input-container">
+          <img src="../assets/imgs/icon-search.svg" alt="" />
+          <input type="text" placeholder="Pesquisar" />
+        </div>
+      </div>
+
+      <table>
+        <tbody>
+          <tr>
+            <td><img src="../assets/imgs/icon-bag-dollar.svg" alt="" /></td>
+            <td>Salário</td>
+            <td class="success">+ R$ 7000</td>
+          </tr>
+          <tr>
+            <td><img src="../assets/imgs/icon-piggy-bank.svg" alt="" /></td>
+            <td>Investimento</td>
+            <td class="success">+ R$ 1000</td>
+          </tr>
+          <tr>
+            <td><img src="../assets/imgs/icon-fork-knife.svg" alt="" /></td>
+            <td>Alimentação</td>
+            <td class="danger">- R$ 1500</td>
+          </tr>
+          <tr>
+            <td><img src="../assets/imgs/icon-desktop-game.svg" alt="" /></td>
+            <td>Lazer</td>
+            <td class="danger">- R$ 500</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
