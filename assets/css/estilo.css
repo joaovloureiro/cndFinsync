@@ -35,7 +35,7 @@ main {
     padding-left: 2rem;
 }
 
-.title form input {
+form input[type="text"] {
     margin-bottom: 1rem;
     border: 0.0625rem solid black;
     border-radius: 0.25rem;
