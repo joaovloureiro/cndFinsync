@@ -1,0 +1,102 @@
+* {
+    margin: 0rem;
+    padding: orem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffbd59;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Krona One", sans-serif;
+    font-weight: 600;
+    color: rgba(28, 29, 30, 0.94);
+}
+
+header {
+    display: flex;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    flex-grow: 1;
+    background-color: white;
+    padding-left: 2rem;
+}
+
+.title form input {
+    margin-bottom: 1rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.25rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+}
+
+.title form input:nth-of-type(2) {
+    margin-bottom: 0rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+footer {
+    display: flex;
+    background-color: white;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn-x {
+    border: 0.0625rem solid #756854;
+    color: #756854;
+    background-color: white;
+}
+
+.btn-y {
+    color: white;
+    background-color: #756854;
+}
+
+.btn-x a {
+    color: #756854;
+}
+
+.btn-y a{
+    color: white;
+}
