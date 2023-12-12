@@ -43,14 +43,14 @@
       <nav>
         <ul>
           <li>
-            <a href="dashboard_month.html"
+            <a href="home.html"
               ><img
                 width="16"
                 height="16"
-                src="../assets/imgs/carbon_growth.svg"
+                src="../assets/imgs/icon_list_dashboard.svg"
                 alt=""
               />
-              Dashboard</a
+              Lançamentos</a
             >
           </li>
           <li>
@@ -68,42 +68,53 @@
       </nav>
     </header>
 
-    <main class="page-home">
+    <main class="page-dashboard">
       <div class="title">
-        <h1>Histórico</h1>
+        <h1>Dashboard</h1>
       </div>
 
-      <div class="table-search">
-        <div class="input-container">
-          <img src="../assets/imgs/icon-search.svg" alt="" />
-          <input type="text" placeholder="Pesquisar" />
+      <div class="row size_9" style="margin-bottom: 1.5rem;">
+        <div class="box" style="background-color: var(--color-primary); display: flex;">
+          <a href="" style="text-decoration: none;">
+            <h2 style="color: #000; font-size: 2rem; font-weight: 400;">
+                Mês
+            </h2>
+          </a>
+        </div>
+        <div class="box" style="display: flex;">
+          <a href="./dashboard_geral.html" style="text-decoration: none;">
+            <h2 style="color: var(--color-secundary); font-size: 2rem; font-weight: 400;">
+                Geral
+            </h2>
+          </a>
         </div>
       </div>
 
-      <table>
-        <tbody>
-          <tr>
-            <td><img src="../assets/imgs/icon-bag-dollar.svg" alt="" /></td>
-            <td>Salário</td>
-            <td class="success">+ R$ 7000</td>
-          </tr>
-          <tr>
-            <td><img src="../assets/imgs/icon-piggy-bank.svg" alt="" /></td>
-            <td>Investimento</td>
-            <td class="success">+ R$ 1000</td>
-          </tr>
-          <tr>
-            <td><img src="../assets/imgs/icon-fork-knife.svg" alt="" /></td>
-            <td>Alimentação</td>
-            <td class="danger">- R$ 1500</td>
-          </tr>
-          <tr>
-            <td><img src="../assets/imgs/icon-desktop-game.svg" alt="" /></td>
-            <td>Lazer</td>
-            <td class="danger">- R$ 500</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="row size_13">
+        <div class="box">
+          <p>Entradas</p>
+          <p>R$7.000,00</p>
+        </div>
+        <div class="box">
+          <p>Saídas</p>
+          <p>R$3.720,00</p>
+        </div>
+      </div>
+
+      <div class="row size_13">
+        <div class="box">
+          <p>Poupança</p>
+          <p>R$15.000,00</p>
+        </div>
+      </div>
+
+      <div class="row size_13">
+        <div class="box">
+          <p>Investimentos</p>
+          <p>R$27.000,00</p>
+        </div>
+      </div>
+
     </main>
   </body>
 </html>
