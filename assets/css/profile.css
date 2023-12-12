@@ -1,0 +1,181 @@
+body {
+    --color-primary: #ffbd59;
+    --color-secundary: #756854;
+    --color-black: rgba(28, 29, 30, 0.94);
+    --color-white: #fff;
+    --color-danger: #f00;
+    --color-success: #33ad3f;
+    --color-text: rgba(28, 29, 30, 0.94);
+    --color-text-light: #4f6c7c;
+  
+    background-color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    color: var(--color-text);
+    font-family: "Krona One", sans-serif;
+  
+    button {
+      cursor: pointer;
+    }
+  }
+  
+  .header {
+    background-color: var(--color-primary);
+    padding: 1.5rem;
+  
+    & > .header-top {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 45px;
+  
+      & > .left-col {
+        & > h3 {
+          margin: 0;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+  
+        & > .show-amount {
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 0.5rem;
+          gap: 1rem;
+  
+          & > .amount {
+            word-wrap: nowrap;
+            background-color: var(--color-secundary);
+            border-radius: 20px;
+            padding: 10px 7px;
+            color: var(--color-white);
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-wrap: nowrap;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+          }
+  
+          & > button {
+            border: none;
+            background-color: transparent;
+            width: fit-content;
+            height: 100%;
+          }
+        }
+      }
+      & > .user-photo {
+        background-color: var(--color-white);
+        border-radius: 50%;
+        border: 2px solid var(--color-secundary);
+  
+        & > img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+      }
+    }
+  
+    & > nav {
+      & > ul {
+        padding-inline-start: 0;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 2rem 0 0;
+  
+        & > li {
+          list-style: none;
+  
+          & > button,
+          & > a {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: flex-start;
+            border: none;
+            background-color: transparent;
+            color: var(--color-text);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-family: "Krona One", sans-serif;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .page-home {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    & > .box-info {
+        padding: 14px 24px;
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        border-radius: 40px;
+        width: 372px;
+  
+
+        & > .campos {
+            margin: 10px;
+            display: flex;
+            & > .dado {
+                padding-left: 10px;
+            }
+        }
+
+      & > h1 {
+        margin: 0;
+        color: var(--color-primary);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      
+    }
+    & > .box-button {
+        padding: 14px 24px;
+        background-color: var(--color-secundary);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        border-radius: 40px;
+        width: 290px;
+        height: 15px;
+        justify-content: center;
+        font:var(--color-white);
+
+        & > .button-text {
+            color: var(--color-white);
+          }
+    }
+
+
+  }
+  
